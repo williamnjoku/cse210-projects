@@ -1,4 +1,3 @@
-using System;
 public class Fraction
 {
     private int _top;
@@ -9,9 +8,9 @@ public class Fraction
         _top = 1;
         _bottom = 1;
     }
-    public Fraction(int top)
+    public Fraction(int wholeNumber)
     {
-        _top = top;
+        _top = wholeNumber;
         _bottom = 1;
     }
     public Fraction(int top, int bottom)
@@ -23,27 +22,26 @@ public class Fraction
     {
         return _top;
     }
-    public void SetTop(int top)
+    public int SetTop(int top)
     {
-        _top = top;
+        return _top = top;
     }
     public int GetBottom()
     {
         return _bottom;
     }
-    public void SetBottom(int bottom)
+    public int SetBottom(int bottom)
     {
-        _bottom = bottom;
+        return _bottom = bottom;
     }
-
     public string GetFractionString()
     {
-        string text = $"{_top}/{_bottom}";
-        return text;
+        return $"{_top}/{_bottom}";
     }
     public double GetDecimalValue()
     {
-        return (double)_top / (double)_bottom;
+        
+        return (double) _top / (double) _bottom;
+         
     }
 }
-
