@@ -5,13 +5,11 @@ public class MathAssignment : Assignment
 
     public MathAssignment(string name, string topic, string section, string problems) : base(name,  topic)
     {
-        _studentName = name;
-        _topic = topic;
         _textbookSection = section;
         _problems = problems;
     }
 
-    public string GetHomeworkList()
+    public override string GetAssignmentDetails()
     {
         return $"Section {_textbookSection}: Problem {_problems}";
     }

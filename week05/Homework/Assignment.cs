@@ -12,4 +12,8 @@ public class Assignment
     {
         return $"Name: {_studentName}, Topic: {_topic}.";
     }
+    public virtual string GetAssignmentDetails()
+    {
+        return " ";
+    }
 }

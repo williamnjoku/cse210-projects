@@ -5,12 +5,10 @@ public class WritingAssignment : Assignment
 
     public WritingAssignment(string name, string topic, string title, string author) : base(name, topic)
     {
-        _studentName = name;
-        _topic = topic;
         _title = title;
         _author = author;
     }
-    public string GetWritingInformation()
+    public override string GetAssignmentDetails()
     {
         return $"{_title} by {_author}.";
     }
